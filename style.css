@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #f4d04e;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 384px;
+    height: 522px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #111111;
+    box-shadow: 10px 10px;
+}
+
+img {
+    border-radius: 3%;
+    width: 87%;
+    margin-top: 24px;
+
+}
+
+.text-container {
+    width: 87%;
+    position: relative;
+}
+
+
+h3 {
+    width: 80px;
+    position: absolute;
+    top: 24px;
+    background-color: #f4d04e;
+    color: #111111;
+    padding: 2px 7px;
+    border: 5px solid #f4d04e;
+    border-radius: 5px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 900;
+    font-size: 0.875rem;
+}
+
+h5 {
+    position: absolute;
+    top: 70px;
+    color: #111111;
+    font-size: 0.875rem;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    color: #111111;
+    font-family: "Figtree", sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 98px;
+    font-size: 1.5rem;
+    
+}
+
+h1:hover {
+    color: #f4d04e;
+    cursor: pointer;
+}
+
+p {
+    font-family: "Figtree", sans-serif;
+    position: absolute;
+    top: 144px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6B6B6B;
+    line-height: 150%;
+    width: 90%;
+    word-spacing: 3px;
+}
+
+.avatar-container {
+    position: absolute;
+    top: 210px;
+    display: flex;
+}
+
+.avatar {
+    height: 30px;
+    width: auto;
+}
+
+h6 {
+    color: #111111;
+    font-family: "Figtree", sans-serif;
+    font-weight: 900;
+    margin-top: 33px;
+    margin-left: 12px;
+}
+
+@media  only screen and (max-width: 375px) {
+    html {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 327px;
+        height: 501px;
+    }
+
+    h3 {
+        width: 70px;
+        padding: 2px 7px 2px 7px;
+    }
+
+    .avatar-container {
+        top:230px;
+    }
+}
